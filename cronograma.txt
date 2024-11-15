@@ -1,0 +1,69 @@
+Único día: 420 minutos: [120, 105, 90, 75]
+
+(Temas 1 a 7)
+1. Introducción a JQuery e instalación de VSC y Live Server (15 minutos)
+2. selectores_basicos (15 minutos)
+3. manejo_errores (15 minutos)
+4. formulario y validación.js (30 minutos)
+5. boton_dinamico (30 minutos)
+6. manejo_clases (15 minutos)
+
+*** BREAK (15 minutos) ***
+
+7. toggle_test (10 minutos)
+8. show_hide (30 minutos)
+9. iteradores (20 minutos)
+10. metodo_attr (20 minutos)
+11. dimensiones (25 minutos)
+
+*** COMIDA (60 minutos) ***
+
+==> Empieza AJAX
+
+12. Ejemplo 1 (45 minutos)
+13. Ejemplo 2 (45 minutos)
+
+*** BREAK (15 minutos) ***
+
+14. Ejemplo 3 (30 minutos)
+15. Ejemplo 4 (90 minutos)
+
+
+Temario: 
+
+1. Introducción
+2. Instalación y Configuración
+3. Selectores básicos.
+4. Método ready
+5. Manejo errores
+6. Getters y Setters
+7. Método CSS
+8. Manejo de clases
+9. Show y Hide
+10. Iterar elementos (each y for)
+11. For of
+12. Método Attr
+13. Dimensiones
+
+// TEMAS PENDIENTES:
+14. Efectos
+15. Eventos de Teclado
+16. Eventos del Mouse
+17. Método Data
+18. Animaciones parte 1
+19. Animaciones parte 2
+20. Velocidad y Duración de Animaciones
+21. Eventos de Scroll
+22. Crear, Copiar Mover y Remover Elementos
+23. Padres, Hijos, Hermanos de Elementos
+24. Creando Elementos Virtuales
+
+// Retoma:
+25. JSON Parse
+26. AJAX Teórico
+27. Método Get en AJAX
+28. Método POST
+29. getJSON
+30. Ejemplo Ajax
+31. Crea un plugin 
+
