@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .box {
+            width: 80%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+        }
+
+        input {
+            display: block;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        #hover-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Demostración de eventos jQuery</h2>
+
+    <p class="box" id="click-box">Haz clic aquí para cambiar el color y el texto.</p>
+
+    <p class="box" id="dblclick-box">Haz doble clic para agrandar este cuadro.</p>
+
+    <p class="box" id="mouseenter-box">Pasa el mouse sobre mí para cambiar el fondo.</p>
+
+    <p class="box" id="mouseleave-box">Muévete fuera de este cuadro para mostrar un mensaje.</p>
+
+    <p class="box" id="mousedown-box">Haz clic (presiónalo) para girar este cuadro.</p>
+
+    <p class="box" id="mouseup-box">Suelta el botón del mouse aquí para mostrar un mensaje.</p>
+
+    <div class="box" id="hover-box">Pasa el mouse por aquí (hover).</div>
+
+    <input type="text" placeholder="Haz foco aquí" id="focus-field">
+    <input type="text" placeholder="Después haz clic fuera" id="blur-field">
+
+    <p class="box" id="on-method">Pasa el mouse, sal del cuadro o haz clic para cambiar color (usando .on)</p>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // click()
+            $("#click-box").click(function () {
+                $(this).css("color", "darkred");
+                $(this).text("¡Hiciste clic! Ahora soy rojo.");
+            });
+
+            // dblclick()
+            $("#dblclick-box").dblclick(function () {
+                $(this).css({
+                    "transform": "scaleY(1.4)",
+                    "background-color": "#ffe0b2",
+                    "margin": "4px"
+                });
+                $(this).text("¡Doble clic detectado! Ahora soy más alto.");
+            });
+
+            // mouseenter()
+            $("#mouseenter-box").mouseenter(function () {
+                $(this).css("background-color", "#d1c4e9");
+                $(this).text("¡Mouse dentro! Cambie de color.");
+            });
+
+            // mouseleave()
+            $("#mouseleave-box").mouseleave(function () {
+                alert("¡Adiós! Has salido del cuadro.");
+            });
+
+            // mousedown()
+            $("#mousedown-box").mousedown(function () {
+                $(this).css("transform", "rotate(10deg)");
+                $(this).text("¡Mouse presionado! Estoy rotado.");
+            });
+
+            // mouseup()
+            $("#mouseup-box").mouseup(function () {
+                alert("¡Mouse soltado sobre el cuadro!");
+            });
+
+            // hover()
+            $("#hover-box").hover(
+                function () {
+                    $(this).css("background-color", "lightgreen");
+                    $(this).text("¡Dentro del cuadro!");
+                },
+                function () {
+                    $(this).css("background-color", "lightblue");
+                    $(this).text("Pasa el mouse por aquí (hover).");
+                }
+            );
+
+            // focus()
+            $("#focus-field").focus(function () {
+                $(this).css({
+                    "background-color":"#49ada2",
+                    "color":"#ffffff"
+                });
+            });
+
+            // blur()
+            $("#blur-field").blur(function () {
+                $(this).css("background-color", "#eef76a");
+            });
+
+            // on() method - múltiples eventos
+            $("#on-method").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "#c8e6c9");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "#ffccbc");
+                },
+                click: function () {
+                    $(this).css("background-color", "#ffd54f");
+                    $(this).text("¡Click detectado con el método on()!");
+                }
+            });
+
+        });
+        
+    </script>
+
+</body>
+</html>

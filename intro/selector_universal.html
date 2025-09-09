@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" 
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+    crossorigin="anonymous"></script>
+    <title>Selector universal</title>
+</head>
+<body>
+    
+    <h2>Hola a todos</h2>
+
+    <p>Usando el selector universal *</p>
+    <p>Selecciona todos los elementos HTML de una página web</p>
+
+    <button>Ocultar todos los elementos</button>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("*").hide(); // Hide oculta todos
+            });
+        });
+    </script>
+
+</body>
+</html>

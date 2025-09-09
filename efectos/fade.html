@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Efectos para desvanecer</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            width: 96%;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        button {
+            padding: 12px;
+        }
+        .circulo {
+            margin-top: 40px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .rojo { 
+            background-color: red; 
+        }
+        .verde { 
+            background-color: green; 
+        }
+        .azul { 
+            background-color: blue; 
+        }
+        .fadein .circulo { 
+            display: none;
+        }
+        .fadein, .fadeout, .fadetoggle, .fadeto {
+            border-right: 2px solid darkslategray;
+            border-left: 2px solid darkslategray;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Diferencias entre fadeIn(), fadeOut(), fadeToggle() y fadeTo()</h2>
+
+    <div class="container">
+
+        <div class="fadein">
+            <p><strong>fadeIn() con diferentes parámetros</strong></p>
+            <button type="button" id="btn1">Click para aparecer los círculos</button>
+            <div class="circulo rojo"></div>
+            <div class="circulo verde"></div>
+            <div class="circulo azul"></div>
+        </div>
+        
+        <div class="fadeout">
+            <p><strong>fadeOut() con diferentes parámetros</strong></p>
+            <button type="button" id="btn2">Click para desvanecer los círculos</button>
+            <div class="circulo rojo"></div>
+            <div class="circulo verde"></div>
+            <div class="circulo azul"></div>
+        </div>
+
+        <div class="fadetoggle">
+            <p><strong>fadeToggle() con diferentes parámetros</strong></p>
+            <button type="button" id="btn3">Click para alternar entre fadeIn y fadeOut</button>
+            <div class="circulo rojo"></div>
+            <div class="circulo verde"></div>
+            <div class="circulo azul"></div>
+        </div>
+
+        <div class="fadeto">
+            <p><strong>fadeTo() con diferentes opacidades</strong></p>
+            <button type="button" id="btn4">Click para opacar los círculos</button>
+            <div class="circulo rojo"></div>
+            <div class="circulo verde"></div>
+            <div class="circulo azul"></div>
+        </div>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // fadeIn
+            $("#btn1").click(function () {
+                $(".fadein .rojo").fadeIn();
+                $(".fadein .verde").fadeIn("slow");
+                $(".fadein .azul").fadeIn(3000);
+            });
+
+            // fadeOut
+            $("#btn2").click(function () {
+                $(".fadeout .rojo").fadeOut();
+                $(".fadeout .verde").fadeOut("slow");
+                $(".fadeout .azul").fadeOut(3000);
+            });
+
+            // fadeToggle
+            $("#btn3").click(function () {
+                $(".fadetoggle .rojo").fadeToggle();
+                $(".fadetoggle .verde").fadeToggle("slow");
+                $(".fadetoggle .azul").fadeToggle(3000);
+            });
+
+            // fadeTo
+            $("#btn4").click(function () {
+                $(".fadeto .rojo").fadeTo("slow", 0.15);
+                $(".fadeto .verde").fadeTo("slow", 0.4);
+                $(".fadeto .azul").fadeTo("slow", 0.7);
+            });
+        });
+
+    </script>
+
+</body>
+</html>

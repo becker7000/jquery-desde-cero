@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Show y hide</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        div{
+            width: 80%;
+            margin: 8px auto;
+            padding: 12px;
+            border: 1px solid darkblue;
+        }
+        button{
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Usando efectos básicos con jQuery</h2>
+
+    <div>
+        <button type="button" id="hide">Ocultar</button>
+        <button type="button" id="show">Mostrar</button>
+        <p id="txt">Este es un texto que puede aparecer y desaparecer con efectos jQuery</p>
+    </div>
+
+    <div>
+        <button type="button" id="toggle">Mostrar u ocultar</button>
+        <p id="txt2">Este es un texto que muestra el uso del método toggle</p>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+            // Efecto ocultar simple
+            $("#hide").click(function(){
+                $("#txt").hide(800); // Después probar con 800 milisegundos
+            });
+            // Efecto mostrar simple
+            $("#show").click(function(){
+                $("#txt").show(800); // Después probar con 800 milisegundos
+            });
+            $("#toggle").click(function(){
+                $("#txt2").toggle(800);
+            });
+        });
+    </script>
+    
+</body>
+</html>
