@@ -1,0 +1,56 @@
+DÍA 1:
+
+AM
+[INTRO]
+10:00  Examen
+10:15  [d2-d10] Intro a JQuery + Instalación 
+10:25  selectores_basicos.html
+10:40  selector_universal.html
+10:50  selector_this.html
+11:00  [d11-d12] manejo_errores.html
+11:15  Intro a eventos [d13-d15]
+11:20  eventos_comunes.html
+
+12:00  BREAK
+
+12:15  [d16-d17] eventos_curiosos.html
+[EFECTOS]
+12:30  [d18-d21] Intro a efectos
+12:35  show-hide.html (carperta "efectos")
+12:55  navbar.html
+
+PM
+01:30  [d22-d24] Intro a efectos fade
+01:40  fade.html 
+
+02:00  COMIDA
+
+03:00  fade.html
+03:30  formulario.html - validacion.js 
+04:00  boton_dinamico.html 
+
+04:30  BREAK
+
+04:45  manejo_clases.html
+05:00  toggleclass_test.html
+05:15  iteradores.html
+05:45  tiempo libre (15 minutos)
+
+==================================
+9. iteradores (20 minutos)
+10. metodo_attr (20 minutos)
+11. dimensiones (25 minutos)
+
+*** COMIDA (60 minutos) ***
+
+==> Empieza AJAX
+
+12. Ejemplo 1 (45 minutos)
+13. Ejemplo 2 (45 minutos)
+
+*** BREAK (15 minutos) ***
+
+14. Ejemplo 3 (30 minutos)
+15. Ejemplo 4 (90 minutos)
+
+
