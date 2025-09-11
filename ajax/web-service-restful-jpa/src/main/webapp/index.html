@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos a la API de Películas</title>
+    <link rel="stylesheet" href="css/estilo.css" >
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Cambiar teclado: alt + shift, Menú de emojis: win+ñ, win+.  -->
+            <h1>Bienvenidos a la API de Películas 🎬</h1>
+            <p>Tu fuente confiable para obtener información sobres las mejor pelícuals de todos tiempos.</p>
+        </header>
+
+        <section class="api-info">
+            <h2>¿Cómo usar la API?</h2>
+            <p>
+                Esta API te permite acceder a una base de datos enorme con información sobre películas,
+                incluyendo título, género, duración y más de cada película.
+            </p>
+
+            <h3>Endpoints disponibles: </h3>
+            <ul>
+                <li>
+                    <strong>/web-service-restful-jpa/api/peliculas</strong>
+                    con POST más la película en JSON para guardar una película nueva.
+                </li>
+                <li>
+                    <strong>/web-service-restful-jpa/api/peliculas</strong>
+                    con GET para obtener toda la lista de películas.
+                </li>
+                <li>
+                    <strong>/web-service-restful-jpa/api/peliculas/{id}</strong>
+                    con GET para obtener una película en especifico por medio de su id.
+                </li>
+                <li>
+                    <strong>/web-service-restful-jpa/api/peliculas/{id}</strong>
+                    con PUT más la película en JSON para editar una película.
+                </li>
+                <li>
+                    <strong>/web-service-restful-jpa/api/peliculas/{id}</strong>
+                    con DELETE para eliminar una película por medio de su id.
+                </li>
+            </ul>
+
+            <h3>Formato de respuesta: </h3>
+            <pre>
+                {
+                    "id": 1,
+                    "titulo": "El padrino",
+                    "anioLanzamiento": 1970,
+                    "genero": "Drama",
+                    "duracion": 180
+                }
+            </pre>
+
+            <!-- Agregar despúes de instalar la API -->
+            <div>
+                <a href="jquery/gestor-peliculas.html">Ir al gestor de peliculas</a>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>

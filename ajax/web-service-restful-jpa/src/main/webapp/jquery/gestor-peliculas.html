@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Películas</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="estilo-gespeli.css">
+</head>
+<body>
+
+<h1>Gestor de películas</h1>
+<p>Consumiendo un Web Service RESTful</p>
+<p>Usando los métodos GET, POST, PUT y DELETE con JQuery</p>
+
+<!-- Botones para cargar, buscar películas y añadir una nueva -->
+<button id="cargarPeliculas">Cargar películas</button>
+<button id="crearPeliculaBtn">Crear nueva película</button>
+<br><br>
+<label for="idBuscar">Buscar por ID:</label>
+<input type="number" id="idBuscar" placeholder="ID de la película">
+<button id="buscarPorId">Buscar</button>
+<br><br>
+
+<!-- Tabla de Películas Disponibles -->
+<h2>Películas disponibles</h2>
+<table id="peliculasTabla" border="1">
+  <thead>
+  <tr>
+    <th>Título</th>
+    <th>Año de Lanzamiento</th>
+    <th>Género</th>
+    <th>Duración</th>
+    <th>Acciones</th>
+  </tr>
+  </thead>
+  <tbody>
+  <!-- Las películas se agregarán aquí -->
+  </tbody>
+</table>
+
+<pre>
+
+
+
+
+</pre>
+
+<script src="metodos_http.js"></script>
+
+</body>
+</html>
